@@ -4,7 +4,7 @@ package Controller;
  *
  * @author Sumburane
  */
-public class BinaryGap {
+public class BinaryGapController {
 
     public int calculaZeros(int array[], int i, int posAtual, int result) {
 
