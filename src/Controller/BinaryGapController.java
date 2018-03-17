@@ -7,26 +7,24 @@ package Controller;
 public class BinaryGapController {
 
     public int calculaZeros(int array[], int i, int posAtual, int result) {
-
         if (array.length == i || array.length == 0) {
+            
+            if (posAtual > result) 
+                result = posAtual;
+            
             return result;
         } else {
             if (array[i] == 0) {
                 posAtual++;
-                
-                i = i + 1;
-                return this.calculaZeros(array, i, posAtual, result);
+                return this.calculaZeros(array, ++i, posAtual, result);
             } else {
-                if (posAtual > result) {
+                if (posAtual >= result) {
                     result = posAtual;
                     posAtual = 0;
                 }
-                i = i + 1;
-                return this.calculaZeros(array, i, posAtual, result);
+                return this.calculaZeros(array, ++i, posAtual, result);
             }
-
         }
-
     }
 
     public int recebeArray(int array[]) {

@@ -13,7 +13,7 @@ public class BinaryGap {
         BinaryGapController controller = new BinaryGapController();
 
         
-        int array[] = {1,0,1,0,1,0,0,1};   
+        int array[] = {1,0,1,0,1,0,0};   
         
         System.out.println(controller.recebeArray(array));
     }
