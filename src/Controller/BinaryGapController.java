@@ -8,10 +8,8 @@ public class BinaryGapController {
 
     public int calculaZeros(int array[], int i, int posAtual, int result) {
         if (array.length == i || array.length == 0) {
-            
             if (posAtual > result) 
-                result = posAtual;
-            
+                result = posAtual;           
             return result;
         } else {
             if (array[i] == 0) {
